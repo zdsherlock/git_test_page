@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background: #f5f5f5;
+    font-family: "微软雅黑";
+    overflow-x: hidden;
+}
+button{
+    cursor: pointer;
+}
+section{
+    width: 100% ;
+    margin: 0 auto;
+}
+ul:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+/*通用元素*/
+.header{
+    height: 10rem;
+    width: 120rem;
+    margin: 0 auto;
+    background: white;
+    position: relative;
+}
+.logo{
+    float: left;
+    padding: 2rem 0 2rem 1rem;
+    height: 100%;
+}
+.logo > a >img{
+    height: 100%;
+}
+ul{
+    list-style-type: none;
+}
+.nav > ul{
+    float: right;
+}
+.nav > ul > li{
+    float: left;
+    line-height: 10rem;
+    height: 10rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: 4rem;
+}
+.nav > ul > li:hover,.nav > ul > li:active,.nav > ul > li:focus{
+    border-bottom: 0.3rem solid #85b536;
+}
+.nav > ul > li > a:hover,.nav > ul > a > li:active,.nav > ul > a > li:focus{
+    color: #85b536;
+}
+.nav > ul > li:last-child{
+    margin-right: 11.4rem;
+}
+.nav > ul > li > a{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 1.6rem;
+    color: black;
+}
+#products-menu{
+    border-bottom: none !important;
+    width: 10.4rem;
+    box-sizing: content-box;
+    z-index: 2;
+}
+
+#products-menu > ul{
+    list-style-type: none;
+    display: none;
+    width: 12rem;
+    position: absolute;
+    z-index: 999;
+}
+#products-menu > ul > li{
+    background-color: #86b637;
+    border-bottom: thin solid #71a122;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    padding-left: 2rem;
+}
+#products-menu > ul > li:last-child{
+    border-bottom:none;
+}
+#products-menu > ul > li:hover{
+    background-color: #72a128;
+}
+#products-menu > ul> li > a{
+    font-size: 1.6rem;
+    color: white;
+}
+.banner{
+    width: 168rem;
+    height: 60rem;
+    background-size:100% 100% ;
+    z-index: 1;
+    /*! display: none; */
+}
+@media screen and (max-width: 1200px){
+    body{
+        min-width: 120rem;
+        overflow-x: scroll;
+    }
+    
+}
+@media screen and (max-width: 1800px) {
+    section{
+    width: 168rem;
+    position: relative;
+    left: 50%;
+    margin: 0 auto 0 -84rem;
+    }
+    .header{
+    height: 10rem;
+    width: 120rem;
+    margin: 0 auto 0 -60rem;
+    background: white;
+    position: relative;
+    left: 50%;
+    }
+
+}
+@media screen and (min-width: 1800px) {
+    .banner{
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,66 @@
+.banner{
+     background: url("../images/aboutus/banner2.jpg");
+}
+.introduce{
+    text-align: center;
+    position: relative;
+}
+.introduce > div{
+    width: 168rem;
+    margin: 0 auto;
+}
+.introduce > div > div:nth-child(2){
+    padding-top: 4rem;
+}
+.introduce button{
+    width: 18.2rem;
+    height: 4.2rem;
+    border: thin solid #cecece;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.4rem;
+    color: #666666;
+}
+.news{
+    text-align: left;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+    width: 168rem;
+}
+.news > div{
+    width: 120rem;
+    margin: 0 auto; 
+}
+.news h2{
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.news h3{
+    font-size: 1.4rem;
+    margin-bottom: 1rem; 
+    color: gray;
+    text-align: center;
+    font-weight: normal;
+}
+.news p{
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    /*! text-indent: 2em; */
+}
+footer{
+    background: white;
+    text-align: center;
+}
+footer > div{
+    height: 10rem;
+    margin-top: 8rem;
+    line-height: 10rem;
+    font-size: 2rem;
+}
+@media screen and (max-width: 1200px) {
+    .news p {
+        padding-left: 1rem;
+    }
+}
