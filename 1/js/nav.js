@@ -16,7 +16,7 @@ $(document).ready(function(){
        nav("aboutus.html");
    });
     $(".nav > ul > li:nth-child(4)").on("click",function(){
-       nav("news.html");
+       nav("news-index.html");
    });
     $(".nav > ul > li:last-child").on("click",function(){
        nav("contactus.html");
