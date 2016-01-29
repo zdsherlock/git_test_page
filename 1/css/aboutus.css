@@ -139,16 +139,16 @@
     float: right;
     
 }
-.our-honor > div  >div:last-child > div:first-child{
-    float: left;
+.honor-pic{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
 }
-.our-honor > div  >div:last-child > div:last-child{
-    float: right;
-}
-.our-honor > div  >div:last-child > div > div{
+.honor-pic > div{
     width: 24.3rem;
     height: 14.4rem;
     margin-top: 2rem;
+    padding-right: 20px;
 }
 .our-honor img{
     width: 100%;
