@@ -1,5 +1,6 @@
-.banner{
-     background: url("../images/index/banner.jpg");
+.banner > img{
+     width: 100%;
+     height: 100%;
 }
 .introduce{
     text-align: center;
@@ -88,46 +89,65 @@
     border-radius: 50%;
     position: relative;
 }
-.products-list > div:first-child > div{
-    background: url("../images/index/products-1.jpg") no-repeat 20%; 
-    background-size: cover;
-} 
-.products-list > div > div:hover{
-    box-shadow:  0 0 0 300px rgba(0, 0, 0, 0.5) inset;
+.products-list > div{
+    overflow: hidden;
+    border-radius: 50%;
 }
-.products-list > div:nth-child(2) > div{
-    background: url("../images/index/products-2.jpg") no-repeat 20%; 
-    background-size: cover; 
+.products-list > div > img{
+    z-index: 1;
 }
-.products-list > div:nth-child(3) > div{
-    background: url("../images/index/products-3.jpg") no-repeat center; 
-    background-size: cover; 
+.products-list > div > a{
+    display: block;
+    z-index: 2;
+    position: relative;
 }
-.products-list > div > div > div > span{
+.products-list > div > a > div:first-child{
+    padding-top: 100%;
+}
+.products-list > div > a > div:first-child > img{
     position: absolute;
     top: 0;
+    left: 0;
+    height: 100%;
+}
+.products-list > div > a > div:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+.products-list-item > a > div > span{
+    position: absolute;
+    top: 25%;
+    left: 37%;
     display: block;
     background: url("../images/index/products-1-1.png") no-repeat;
     background-size: 100% auto;
     width: 7.5rem;
     height: 8.5rem;
 }
-.products-list > div:nth-child(2) > div > div > span{
+.products-list-item > a > div > p{
+    position: absolute;
+    bottom: 20%;
+    left: 41%;
+    font-size: 25px;
+    color: white;
+}
+.products-list > .products-list-item:nth-child(2) > a > div > span{
     background: url("../images/index/products-2-1.png") no-repeat;
     background-size: 100% auto;
-    top: 10%;
+    top: 30%;
 }
-.products-list > div:nth-child(3) > div > div > span{
+.products-list > .products-list-item:nth-child(3) > a > div > span{
     background: url("../images/index/products-3-1.png") no-repeat;
     background-size: 100% auto;
-    top: 10%;
-    left: 9%;
+    top: 30%;
 }
-.products-list > div > div > div > p{
-    position: absolute;
-    bottom: 0;
-    left: 9%;
-} 
+ 
 .products-list > div > div > div{
     position: absolute;
     top: 30%;
@@ -169,21 +189,13 @@
     display: -webkit-flex;
     margin-top: 6rem;
 }
-.about-us-intro > div:nth-child(2) > div{
+.about-us-intro > div > div{
     width: 33.333%;
     height: 24rem;
-    background: url("../images/index/aboutus-1.jpg") no-repeat;
-    background-size: cover;
 }
-.about-us-intro > div:nth-child(2) > div:nth-child(2){
-    background: url("../images/index/aboutus-2.jpg") no-repeat;
-    background-size: cover;
-    
-}
-.about-us-intro > div:nth-child(2) > div:nth-child(3){
-    background: url("../images/index/aboutus-3.jpg") no-repeat;
-    background-size: cover;
-    
+.about-us-intro > div > div > img{
+    width: 100%;
+    height: 100%;
 }
 .about-us button{
     border-color: white;
@@ -209,21 +221,14 @@
 .news-list > div:nth-child(2n){
     margin-left: 5%;
 }
-.news-list > div > div:first-child{
+.news-list > div > div{
     float: left;
     width: 35.087%;
     height: 100%;
-    background: url("../images/index/news-1.jpg") no-repeat;
-    background-size: cover;
 }
-.news-list > div:nth-child(2) > div:first-child{
-    background: url("../images/index/news-2.jpg") no-repeat;
-}
-.news-list > div:nth-child(3) > div:first-child{
-    background: url("../images/index/news-3.jpg") no-repeat;
-}
-.news-list > div:nth-child(4) > div:first-child{
-    background: url("../images/index/news-4.jpg") no-repeat;
+.news-list img{
+    width: 100%;
+    height: 100%;
 }
 .news-list > div > div:last-child{
     float: right;
@@ -237,6 +242,9 @@
     font-size: 1.2rem;
     line-height: 1.5em;
     color: #757169;
+}
+.list2{
+    display: none;
 }
 .news button{
     margin-top: 9rem;

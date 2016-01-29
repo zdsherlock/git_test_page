@@ -27,7 +27,7 @@
                         }
     
     //标注点数组
-    var markerArr = [{title:"浙江冒个泡电子商务有限公司",content:"浙江省江山市经济开发区山海协作区开源路15号",point:"119.215395|29.022588",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+    var markerArr = [{title:"浙江冒个泡电子商务有限公司",content:"浙江省江山市山海协作园区开源路15-2号",point:"119.215395|29.022588",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
 		 ];
     //创建marker
     function addMarker(){

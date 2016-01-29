@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#production-list > ul > li").hover(function(){
+    $("#production-list > ul > li > a").hover(function(){
         $(this).css("color", "#86b637");},function(){
         $(this).css("color", "#333")  
    });
@@ -17,7 +17,7 @@ $(document).ready(function(){
     $("#nav-bottom > ul > li:nth-child(4),#nav-bottom > ul > li:nth-child(5),#nav-bottom > ul > li:last-child").on("click",
         function(){
             $("#products-fruits").css("display","none");
-            $("#products-fruits").css("display","block");
+            $("#products-fruits-second").css("display","block");
             $("#nav-bottom > ul > li:nth-child(4)").addClass("active");
             $("#nav-bottom > ul > li:nth-child(3)").removeClass("active");                        
     }); 

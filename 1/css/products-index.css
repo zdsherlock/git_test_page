@@ -1,5 +1,6 @@
-.banner{
-        background: url("../images/products-index/banner.jpg");
+.banner > img{
+        width: 100%;
+        height: 100%;
 }
 .products-main {
   width: 168rem;
@@ -34,7 +35,7 @@
 #production-list > ul > li:first-child{
     background-color: #86b637;
 }
-#production-list ul > li{
+#production-list ul > li > a{
     float: left;
     width: 100%;
     height: 100%;
@@ -46,7 +47,7 @@
     color: white !important;
     cursor: default;
 }
-#production-list ul > li > span{
+#production-list ul > li > a > span{
     float: right;
     color: #333;
 }
@@ -80,22 +81,25 @@
     display: flex;
     display: -webkit-flex;
 }
-#products-traffic > div:last-child > div{
+.traffic-pic > div{
     width: 33%;
     padding-left: 2rem;
     float: left;
 }
-#products-traffic > div:last-child > div > div:first-child{
+.traffic-pic> div > a{
+    display: block;
     padding-top: 100%;
-    background: url("../images/products-index/bg1.jpg");
+    position: relative;
+    cursor: pointer;
 }
-#products-traffic > div:last-child > div:nth-child(2) > div:first-child{
-    background: url("../images/products-index/bg2.jpg");
+.traffic-pic> div > a > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-#products-traffic > div:last-child > div:nth-child(3) > div:first-child{
-    background: url("../images/products-index/bg3.jpg");
-}
-#products-traffic > div:last-child > div > div:last-child{
+.traffic-pic> div > div:last-child{
     padding-top: 1.5rem;
     font-size: 1.6rem;
 }
@@ -124,50 +128,41 @@
     line-height: 6rem;
     background: url("../images/products-index/icon1.jpg") no-repeat 0 2.4rem; 
 }
-.fruits-list > div:nth-child(2){
+.page{
     margin-top: 4rem;
     margin-bottom: 2rem;
     width: 100%;
 }
-.fruits-list > div:nth-child(2) > div{
+.page > div{
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
 }
-.fruits-list > div:nth-child(2) > div > div{
+.fruite-pic{
     width: 33%;
     padding-right: 1.4rem;
     margin-bottom: 4rem;   
 }
-.fruits-list > div:nth-child(2) > div > div > div{
+.fruite-pic > a{
     cursor: pointer;
-}
-.fruits-list > div:nth-child(2) > div > div > div:first-child{
+    display: block;
     padding-top: 100%;
-    background-image: url("../images/products-index/fbg1.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-size: cover;
+    position: relative;
 }
-.fruits-list > div:nth-child(2) > div > div:nth-child(2) > div:first-child{
-    background-image: url("../images/products-index/fbg2.jpg");
+.fruite-pic > a > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-.fruits-list > div:nth-child(2) > div > div:nth-child(3) > div:first-child{
-    background-image: url("../images/products-index/fbg3.jpg");
-}
-.fruits-list > div:nth-child(2) > div > div:nth-child(4) > div:first-child{
-    background-image: url("../images/products-index/fbg4.jpg");
-}
-.fruits-list > div:nth-child(2) > div > div:nth-child(5) > div:first-child{
-    background-image: url("../images/products-index/fbg5.jpg");
-}
-.fruits-list > div:nth-child(2) > div > div:nth-child(6) > div:first-child{
-    background-image: url("../images/products-index/fbg6.jpg");
-}
-.fruits-list > div:nth-child(2) > div > div > div:last-child{
+.fruite-pic > div:last-child{
     font-size: 1.6rem;
     margin-top: 1.3rem;
+}
+.visible{
+    display: block
 }
 #nav-bottom > ul:after{
     display: table;

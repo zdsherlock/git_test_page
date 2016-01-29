@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $(".products-list > div > div").hover(function(){
-        $(this).children().css("display", "block");},function(){
-        $(this).children().css("display", "none");   
+    $(".products-list-item").hover(function(){
+        $(this).find(".hover").css("display", "block");},function(){
+        $(this).find(".hover").css("display", "none");   
    });
    function index(){
        window.location.href = "index.html"
@@ -29,7 +29,13 @@ $(document).ready(function(){
        aboutus();
    });
    $("#news-button").on("click",function(){
-       news();
+       if ($(".list2").css("display") == "none"){
+          $(".list2").css("display","block");
+          console.log("1")
+       } else {
+          console.log("2")
+           $(".list2").css("display","none")
+       }
    });
    $(".products-list > div:first-child").on("click",function(){
        products_f();

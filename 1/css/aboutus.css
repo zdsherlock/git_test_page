@@ -1,5 +1,6 @@
-.banner{
-     background: url("../images/aboutus/banner.jpg");
+.banner > img{
+     width: 100%;
+     height: 100%;
 }
 .introduce{
     text-align: center;
@@ -110,18 +111,10 @@
 .our-intro > div:nth-child(2) > div{
     width: 33.333%;
     height: 24rem;
-    background: url("../images/index/aboutus-1.jpg") no-repeat;
-    background-size: cover;
 }
-.our-intro > div:nth-child(2) > div:nth-child(2){
-    background: url("../images/index/aboutus-2.jpg") no-repeat;
-    background-size: cover;
-    
-}
-.our-intro > div:nth-child(2) > div:nth-child(3){
-    background: url("../images/index/aboutus-3.jpg") no-repeat;
-    background-size: cover;
-    
+.our-intro > div:nth-child(2) > div > img{
+    width: 100%;
+    height: 100%;
 }
 /*我们的介绍*/
 .our-honor{
@@ -149,33 +142,17 @@
 .our-honor > div  >div:last-child > div:first-child{
     float: left;
 }
-.our-honor > div  >div:last-child > div:first-child > div:first-child{
-    background: url("../images/aboutus/honor1.jpg") no-repeat;
-    background-size: 100% 100%;
-}
-.our-honor > div  >div:last-child > div:first-child > div:nth-child(2){
-    background: url("../images/aboutus/honor2.jpg") no-repeat;
-    background-size: 100% 100%;
-}
-.our-honor > div  >div:last-child > div:first-child > div:nth-child(3){
-    background: url("../images/aboutus/honor3.jpg") no-repeat;
-    background-size: 100% 100%;
-}
 .our-honor > div  >div:last-child > div:last-child{
     float: right;
-}
-.our-honor > div  >div:last-child > div:last-child > div:first-child{
-    background: url("../images/aboutus/honor4.jpg") no-repeat;
-    background-size: 100% 100%;
-}
-.our-honor > div  >div:last-child > div:last-child > div:nth-child(2){
-    background: url("../images/aboutus/honor5.jpg") no-repeat;
-    background-size: 100% 100%;
 }
 .our-honor > div  >div:last-child > div > div{
     width: 24.3rem;
     height: 14.4rem;
     margin-top: 2rem;
+}
+.our-honor img{
+    width: 100%;
+    height: 100%;
 }
 footer{
     background: white;
