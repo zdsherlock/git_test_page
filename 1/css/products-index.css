@@ -209,8 +209,6 @@
 }
 .word-img > div:first-child{
     height: 27rem;
-    background: url("../images/products-index/fruits_1.jpg");
-    background-size: cover;
 }
 .word-img > div:last-child{
     display: flex;
@@ -223,11 +221,6 @@
     border-top: 1rem solid #f5f5f5;
     border-left: 1rem solid #f5f5f5;
    
-}
-.word-img > div:last-child > div > div{
-    padding-top: 100%;
-    background: url("../images/products-index/fruits_2.jpg");
-    background-size: cover;
 }
 .word-detail{
     text-align: left;
@@ -312,48 +305,8 @@ footer > div{
     line-height: 10rem;
     font-size: 2rem;
 }
-.apple-pic{
-    width: 86rem;
-    background-color: white;
-    margin-top: 1.5rem;
-}
-.apple-pic > div{
+.img > img{
     width: 100%;
-}
-.apple-pic > div:nth-child(1){
-    height: 77rem;
-    background: url("../images/products-index/apple-1.jpg") no-repeat;
-    background-size: 100% 100%;
-}
-.apple-pic > div:nth-child(3){
-    height: 94rem;
-    background: url("../images/products-index/apple-2.jpg") no-repeat;
-    background-size: 100% 100%;
-    
-}
-.apple-pic > div:nth-child(4){
-    height: 128rem;
-    background: url("../images/products-index/apple-3.jpg") no-repeat;
-    background-size: 100% 100%;
-    
-}
-.apple-pic > div:nth-child(6){
-    height: 80rem;
-    background: url("../images/products-index/apple-4.jpg") no-repeat;
-    background-size: 100% 100%;    
-}
-.apple-pic > div:nth-child(8){
-    height: 100rem;
-    background: url("../images/products-index/apple-5.jpg") no-repeat;
-    background-size: 100% 100%;    
-}
-.apple-pic > div:nth-child(9){
-    height: 168rem;
-    background: url("../images/products-index/apple-6.jpg") no-repeat;
-    background-size: 100% 100%;    
-}
-.apple-pic{
-    text-align: left
 }
 .apple-pic h2{
     height: 5rem;
@@ -364,4 +317,3 @@ footer > div{
     margin: 1rem 0;
     background-color: #fc3954;
 }
-
