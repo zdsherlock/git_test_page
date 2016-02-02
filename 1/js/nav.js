@@ -21,12 +21,4 @@ $(document).ready(function(){
     $(".nav > ul > li:last-child").on("click",function(){
        nav("contactus.html");
    });
-   $("#products-menu > ul > li:first").on("click",function(){
-       nav("products-index-fruits.html");
-       return false;
-   });
-   $("#products-menu > ul > li:last").on("click",function(){
-       nav("products-index.html");
-       return false;    
-   });//产品中心板块替换
 });
