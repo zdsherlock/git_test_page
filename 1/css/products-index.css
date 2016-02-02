@@ -207,9 +207,6 @@
 .word-img{
     width: 42.8rem;
 }
-.word-img > div:first-child{
-    height: 27rem;
-}
 .word-img > div:last-child{
     display: flex;
     display: -webkit-flex; 
