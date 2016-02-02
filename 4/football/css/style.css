@@ -1,3 +1,9 @@
+#content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 .player{
     width: 100%;
 }
@@ -136,8 +142,8 @@
     background-size: auto 15px;
 }
 .news .comments .title{
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     background-color: #fff;
     margin-left: -20px;
     margin-right: -20px;
@@ -173,7 +179,7 @@
     float: right;
 }
 .news .comments li .reply{
-    background-color: #d2d2d2;
+    background-color: #e2e2e2;
     border-radius: 10px;
     margin-top: 10px;
     padding-left: 10px;
@@ -593,7 +599,18 @@
     color: #ccc;
 }
 
-
+/*预览图层样式*/
+#bigimg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0,0, 0.3)
+}
+#bigimg > img{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
 
 
 
