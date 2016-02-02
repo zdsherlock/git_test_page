@@ -126,7 +126,7 @@
     font-size: 1.2rem;
     padding-left: 1.5rem;
     line-height: 6rem;
-    background: url("../images/products-index/icon1.jpg") no-repeat 0 2.4rem; 
+    background: url("../images/products-index/icon1.png") no-repeat 0 2.4rem; 
 }
 .page{
     margin-top: 4rem;
@@ -189,7 +189,9 @@
 }
 .active{
     background: #86b637;
-    color: white;
+}
+.active > a{
+    color: white !important;    
 }
 /*水果第一部分*/
 #fruits-detail{

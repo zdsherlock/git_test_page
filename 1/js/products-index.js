@@ -14,24 +14,8 @@ $(document).ready(function(){
        $("#products-traffic").css("display","block");
        $("#products-fruits").css("display","none");       
    });
-    $("#nav-bottom > ul > li:nth-child(4),#nav-bottom > ul > li:nth-child(5),#nav-bottom > ul > li:last-child").on("click",
-        function(){
-            $("#products-fruits").css("display","none");
-            $("#products-fruits-second").css("display","block");
-            $("#nav-bottom > ul > li:nth-child(4)").addClass("active");
-            $("#nav-bottom > ul > li:nth-child(3)").removeClass("active");                        
-    }); 
-    $("#nav-bottom > ul > li:first-child,#nav-bottom > ul > li:nth-child(2),#nav-bottom > ul > li:nth-child(3)").on("click",
-        function(){
-            $("#products-fruits").css("display","block");
-            $("#products-fruits-second").css("display","none");
-            $("#nav-bottom > ul > li:nth-child(3)").addClass("active");  
-            $("#nav-bottom > ul > li:nth-child(4)").removeClass("active");                                              
-    });
-    $("#products-fruits > div:nth-child(2) > div > div:first-child").on("click",
-        function(){
-            $("#products-fruits").css("display","none");
-            $("#fruits-detail").css("display","block");
-        }
-    );
+   $(".item").on("click",function(){
+       $(".item").removeClass("active");
+       $(this).addClass("active");
+   })
 });

@@ -30,7 +30,8 @@ ul:after{
 /*通用元素*/
 .header{
     height: 10rem;
-    width: 120rem;
+    width: 100%;
+    max-width: 168rem;
     margin: 0 auto;
     background: white;
     position: relative;
@@ -124,14 +125,6 @@ ul{
     position: relative;
     left: 50%;
     margin: 0 auto 0 -84rem;
-    }
-    .header{
-    height: 10rem;
-    width: 120rem;
-    margin: 0 auto 0 -60rem;
-    background: white;
-    position: relative;
-    left: 50%;
     }
 
 }
