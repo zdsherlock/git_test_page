@@ -29,6 +29,7 @@
                         </div>
                         <div class="comments_details">
                             哈哈哈～！皇家马德里威武啊～！
+                            哈哈哈
                         </div>
                         <div class="operation">
                             <a class="reply_btn">回复</a>
@@ -49,24 +50,64 @@
                                 <span class="fl">1楼</span>
                             </div>
                         </div>
-                        <div class="reply">
+                        <div class="reply" select="no">
                             <div class="name">TKG_app</div>
                             <div class="con">皇马太给力了～！</div>
+                            <div class="operation_two">
+                                <a class="reply_btn">回复</a>
+                                <a class="report_btn">举报</a>
+                            </div>
                         </div>
                         <div class="more">更多5条回复</div>
-                        <div class="reply_more">
-                            <div class="name">TKG_app</div>
-                            <div class="con">皇马太给力了～！</div>
-                            <div class="name">画画&nbsp;回复&nbsp;TKG_app</div>
-                            <div class="con">皇马太给力了～！</div>
-                            <div class="name">画画&nbsp;回复&nbsp;TKG_app</div>
-                            <div class="con">皇马太给力了～！</div>
-                            <div class="name">画画&nbsp;回复&nbsp;TKG_app</div>
-                            <div class="con">皇马太给力了～！</div>
-                            <div class="name">画画&nbsp;回复&nbsp;TKG_app</div>
-                            <div class="con">皇马太给力了～！</div>
-                            <div class="name">画画&nbsp;回复&nbsp;TKG_app</div>
-                            <div class="con">皇马太给力了～！</div>
+                        <div class="reply_more" select="no">
+                            <div class="reply" select="no">
+                                <div class="name">TKG_app</div>
+                                <div class="con">皇马太给力了～！</div>
+                                <div class="operation_two">
+                                    <a class="reply_btn">回复</a>
+                                    <a class="report_btn">举报</a>
+                                </div>
+                            </div>
+                            <div class="reply" select="no">
+                                <div class="name">TKG_app</div>
+                                <div class="con">皇马太给力了～！</div>
+                                <div class="operation_two">
+                                    <a class="reply_btn">回复</a>
+                                    <a class="report_btn">举报</a>
+                                </div>
+                            </div>
+                            <div class="reply" select="no">
+                                <div class="name">TKG_app</div>
+                                <div class="con">皇马太给力了～！</div>
+                                <div class="operation_two">
+                                    <a class="reply_btn">回复</a>
+                                    <a class="report_btn">举报</a>
+                                </div>
+                            </div>
+                            <div class="reply" select="no">
+                                <div class="name">TKG_app</div>
+                                <div class="con">皇马太给力了～！</div>
+                                <div class="operation_two">
+                                    <a class="reply_btn">回复</a>
+                                    <a class="report_btn">举报</a>
+                                </div>
+                            </div>
+                            <div class="reply" select="no">
+                                <div class="name">TKG_app</div>
+                                <div class="con">皇马太给力了～！</div>
+                                <div class="operation_two">
+                                    <a class="reply_btn">回复</a>
+                                    <a class="report_btn">举报</a>
+                                </div>
+                            </div>
+                            <div class="reply" select="no">
+                                <div class="name">TKG_app</div>
+                                <div class="con">皇马太给力了～！</div>
+                                <div class="operation_two">
+                                    <a class="reply_btn">回复</a>
+                                    <a class="report_btn">举报</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="comments_details">
                             哈哈哈～！皇家马德里威武啊～！
@@ -75,6 +116,7 @@
                             <a class="reply_btn">回复</a>
                             <a class="report_btn">举报</a>
                         </div>
+
                     </li>
                 </ul>
             </div>
@@ -103,9 +145,43 @@
             return false;
         })
 
+        $('.comments li .reply').on('click',function(){
+            var _this = $(this);
+            _this.parent().removeClass('active').attr('select','no');
+            _this.parent().siblings().removeClass('active').attr('select','no');
+            var select = _this.attr('select');
+            if(select == 'no'){
+                _this.addClass('active');
+                _this.attr('select','yes');
+            }else{
+                _this.removeClass('active');
+                _this.attr('select','no');
+            }
+            return false;
+        })
+
+        $('.comments li .reply_more').on('click',function(){
+            var _this = $(this);
+            _this.parent().removeClass('active').attr('select','no');
+            _this.parent().siblings().removeClass('active').attr('select','no');
+            var select = _this.attr('select');
+            if(select == 'no'){
+                _this.addClass('active');
+                _this.attr('select','yes');
+            }else{
+                _this.removeClass('active');
+                _this.attr('select','no');
+            }
+            return false;
+        })
+
         $('.comments li').on('click',function(){
             var _this = $(this);
             _this.siblings().removeClass('active').attr('select','no');
+            _this.children('.reply').removeClass('active').attr('select','no');
+            _this.children('.reply_more').removeClass('active').attr('select','no');
+            _this.siblings().children('.reply').removeClass('active').attr('select','no');
+            _this.siblings().children('.reply_more').removeClass('active').attr('select','no');
             var select = _this.attr('select');
             if(select == 'no'){
                 _this.addClass('active');
@@ -116,7 +192,9 @@
             }
         })
     })
-
+    $("a").on("click",function(e){
+        e.stopPropagation();
+    });
     //点赞
     function clickLike(id,obj){
         $.ajax({

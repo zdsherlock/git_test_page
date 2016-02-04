@@ -18,10 +18,9 @@
     bottom: 10px;
 }
 .player .information h3,.player .introduction h3{
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
     color: #333;
-    padding: 5px 20px;
+    padding: 10px 15px;
     background-color: #fff;
 }
 .player .information .wrap{
@@ -29,8 +28,8 @@
     padding-right: 30px;
 }
 .player .information .wrap .item{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #757575;
 }
 .player .information .wrap .item span{
@@ -68,14 +67,15 @@
     padding-bottom: 10px;
 }
 .news .news_hd .title{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: #333;
+    height: 48px;
     line-height: 24px;
     overflow: hidden;
 }
 .news .news_hd .time{
-    color: #c2c2c2;
+    color: #999;
     line-height: 24px;
 }
 .news .news_con{
@@ -136,8 +136,8 @@
     background-size: auto 15px;
 }
 .news .comments .title{
-    height: 40px;
-    line-height: 40px;
+    height: 50px;
+    line-height: 50px;
     background-color: #fff;
     margin-left: -20px;
     margin-right: -20px;
@@ -173,10 +173,11 @@
     float: right;
 }
 .news .comments li .reply{
-    background-color: #e2e2e2;
+    background-color: #d2d2d2;
     border-radius: 10px;
     margin-top: 10px;
     padding-left: 10px;
+    position: relative;
 }
 .news .comments li .reply .name{
     padding-bottom: 5px;
@@ -240,6 +241,72 @@
     font-size: 16px;
     color: #ccc;
 }
+ .comments li .reply .operation_two{
+    width: 200px;
+    height: 30px;
+    background-color: #666;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 0;
+    display: none;
+}
+ .comments li .reply.active .operation_two{
+    display: block;
+}
+ .comments li .reply .operation_two .reply_btn{
+    display: inline-block;
+    width: 99px;
+    height: 30px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+ .comments li .reply .operation_two .report_btn{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+ .comments li .reply_more .operation_two{
+    width: 200px;
+    height: 30px;
+    background-color: #666;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 0;
+    display: none;
+}
+ .comments li .reply_more.active .operation_two{
+    display: block;
+}
+ .comments li .reply_more .operation_two .reply_btn{
+    display: inline-block;
+    width: 99px;
+    height: 30px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+ .comments li .reply_more .operation_two .report_btn{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
 .news .comments li .del_wp{
     width: 100px;
     height: 30px;
@@ -266,6 +333,7 @@
     border-radius: 10px;
     margin-top: 10px;
     padding-left: 10px;
+    position: relative;
 }
 .news .comments li .reply_more .name{
     padding-bottom: 5px;
@@ -331,9 +399,8 @@
     padding: 10px 15px 0 15px;
 }
 .activity .activity_information .con h3{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 .activity .activity_information .con .infor{
     padding-left: 15px;
@@ -363,9 +430,8 @@
     border-bottom: 1px solid #ccc;
 }
 .activity .activity_rule h3{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 .activity .activity_rule .rule{
     padding-left: 15px;
@@ -375,9 +441,8 @@
     padding: 10px 15px;
 }
 .activity .activity_content h3{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 .activity .activity_content .con{
     padding-left: 15px;
@@ -434,9 +499,10 @@
     padding-right: 15px;
 }
 .card .card_con .title{
+    font-weight: bold;
+    height: 42px;
     line-height: 21px;
     overflow: hidden;
-    font-size: 18px;
 }
 .card .card_con .detail{
     padding: 5px 0;
@@ -457,8 +523,8 @@
     padding: 0 15px;
 }
 .card .comments .title{
-    height: 40px;
-    line-height: 40px;
+    height: 50px;
+    line-height: 50px;
     background-color: #fff;
     margin-left: -20px;
     margin-right: -20px;
@@ -473,8 +539,8 @@
 .card .comments li a.pic{
     display: block;
     float: left;
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     overflow: hidden;
     border-radius: 5px;
     margin-right: 10px;
@@ -483,21 +549,20 @@
     width: 100%;
     height: 100%;
 }
-/*.card .comments li .comments_inf{
+.card .comments li .comments_inf{
     height: 30px;
-}*/
+}
 .card .comments li .time{
     margin-top: 10px;
-    /*height: 20px;*/
+    height: 20px;
     color: #999;
     font-size: 14px;
 }
 .card .comments li .reply{
-    background-color: #e2e2e2;
+    background-color: #d2d2d2;
     border-radius: 10px;
     margin-top: 10px;
     padding-left: 10px;
-    font-size: 12px;    
 }
 .card .comments li .reply .name{
     padding-bottom: 5px;
@@ -540,27 +605,21 @@
 }
 .card .comments li .comments_inf .nn,.card .comments li .comments_inf .fl{
     color: #333;
-    margin-right: 10px;
-    font-size: 12px;
+    margin-right: 20px;
 }
 .card .comments li .comments_inf .dian{
     float: right;
     padding-right: 30px;
     background: url("../image/zan_g.png") no-repeat right center;
     background-size: 21px 21px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-size: 12px;
 }
 .card .comments li .comments_inf .dian.orange{
     background: url("../image/zan_o.png") no-repeat right center;
     background-size: 21px 21px;
-    
 }
 .card .comments li .comments_details{
     padding-top: 10px;
     color: #666;
-    font-size: 12px;
 }
 .card .comments li .operation{
     width: 200px;
@@ -572,6 +631,9 @@
     right: 0;
     font-size: 0;
     display: none;
+}
+.card .comments li.active .operation{
+    display: block;
 }
 .card .comments li .operation .reply_btn{
     display: inline-block;
@@ -593,18 +655,7 @@
     color: #ccc;
 }
 
-/*预览图层样式*/
-#bigimg{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0,0, 0.3)
-}
-#bigimg > img{
-    position: absolute;
-    top: 25%;
-    width: 100%;
-}
+
 
 
 
