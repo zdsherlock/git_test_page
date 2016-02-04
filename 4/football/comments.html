@@ -147,8 +147,8 @@
 
         $('.comments li .reply').on('click',function(){
             var _this = $(this);
-            _this.parent().removeClass('active').attr('select','no');
-            _this.parent().siblings().removeClass('active').attr('select','no');
+            _this.removeClass('active').attr('select','no');
+            _this.siblings().removeClass('active').attr('select','no');
             var select = _this.attr('select');
             if(select == 'no'){
                 _this.addClass('active');
@@ -160,28 +160,30 @@
             return false;
         })
 
-        $('.comments li .reply_more').on('click',function(){
-            var _this = $(this);
-            _this.parent().removeClass('active').attr('select','no');
-            _this.parent().siblings().removeClass('active').attr('select','no');
-            var select = _this.attr('select');
-            if(select == 'no'){
-                _this.addClass('active');
-                _this.attr('select','yes');
-            }else{
-                _this.removeClass('active');
-                _this.attr('select','no');
-            }
-            return false;
-        })
+        // $('.comments li .reply_more').on('click',function(){
+        //     var _this = $(this);
+        //     _this.parent().removeClass('active').attr('select','no');
+        //     _this.parent().siblings().removeClass('active').attr('select','no');
+        //     var select = _this.attr('select');
+        //     if(select == 'no'){
+        //         _this.addClass('active');
+        //         _this.attr('select','yes');
+        //     }else{
+        //         _this.removeClass('active');
+        //         _this.attr('select','no');
+        //     }
+        //     return false;
+        // })
 
         $('.comments li').on('click',function(){
             var _this = $(this);
             _this.siblings().removeClass('active').attr('select','no');
-            _this.children('.reply').removeClass('active').attr('select','no');
-            _this.children('.reply_more').removeClass('active').attr('select','no');
-            _this.siblings().children('.reply').removeClass('active').attr('select','no');
-            _this.siblings().children('.reply_more').removeClass('active').attr('select','no');
+            _this.find('.reply').removeClass('active').attr('select','no');
+            _this.find('.reply_more').removeClass('active').attr('select','no');
+            _this.siblings().find('.reply').removeClass('active').attr('select','no');
+            _this.siblings().find('.reply_more').removeClass('active').attr('select','no');
+             _this.find('.reply').removeClass('active').attr('select','no');
+            _this.find('.reply_more').removeClass('active').attr('select','no');
             var select = _this.attr('select');
             if(select == 'no'){
                 _this.addClass('active');
@@ -192,6 +194,9 @@
             }
         })
     })
+    $(".reply_more").on("click",function(e){
+        e.stopPropagation();
+    });
     $("a").on("click",function(e){
         e.stopPropagation();
     });
