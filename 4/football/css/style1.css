@@ -1,0 +1,685 @@
+.player{
+    width: 100%;
+}
+.player .pic{
+    width: 100%;
+    font-size: 0;
+    position: relative;
+}
+.player .pic img{
+    width: 100%;
+}
+.player .pic .name{
+    width: 100%;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+}
+.player .information h3,.player .introduction h3{
+    font-size: 20px;
+    color: #333;
+    padding: 10px 15px;
+    background-color: #fff;
+}
+.player .information .wrap{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.player .information .wrap .item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #757575;
+}
+.player .information .wrap .item span{
+    float: right;
+}
+.player .introduction .item{
+    border-bottom: 1px solid #aaa;
+    padding: 20px;
+    color: #757575;
+}
+.player .introduction .item p{
+    text-indent: 2em;
+    line-height: 24px;
+    font-size: 14px;
+}
+.player .introduction .item h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.player .introduction .item li{
+    padding-left: 20px;
+    background: url("../image/round.png") no-repeat 2px 2px;
+    background-size: 15px 15px;
+    margin-bottom: 10px;
+}
+.player .introduction .item .prize{
+    margin-bottom: 10px;
+}
+.news{
+    padding: 20px;
+}
+.news .news_hd{
+    border-bottom: 1px solid #aaa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.news .news_hd .title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.news .news_hd .time{
+    color: #999;
+    line-height: 24px;
+}
+.news .news_con{
+    width: 100%;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+.news .news_con .pic{
+    width: 100%;
+    font-size: 0;
+    position: relative;
+}
+.news .news_con .pic img{
+    width: 100%;
+}
+.news .news_con .pic a.play_btn{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url("../image/play@2x.png");
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.news .news_con .pic video{
+    width: 100%;
+}
+.news .news_con .paragraph{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.news .news_con .paragraph p{
+    text-indent: 2em;
+    font-size: 14px;
+}
+.icon .item{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #999;
+    margin-right: 30px;
+}
+.icon .item.zan{
+    background: url("../image/zan.png") no-repeat left center;
+    background-size: auto 15px;
+}
+.icon .item.fen{
+    background: url("../image/fenxiang.png") no-repeat left center;
+    background-size: auto 15px;
+}
+.icon .item.ping{
+    background: url("../image/pinglun.png") no-repeat left center;
+    background-size: auto 15px;
+}
+.news .comments .title{
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+}
+.news .comments li{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.news .comments li .pic{
+    float: left;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.news .comments li .pic img{
+    width: 100%;
+    height: 100%;
+}
+.news .comments li .comments_inf{
+    height: 30px;
+}
+.news .comments li .time{
+    height: 20px;
+    color: #999;
+    font-size: 14px;
+}
+.news .comments li .time .fl{
+    float: right;
+}
+.news .comments li .reply{
+    background-color: #d2d2d2;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    position: relative;
+}
+.news .comments li .reply .name{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.news .comments li .reply .con{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #666;
+    font-size: 14px;
+}
+.news .comments li .comments_inf .nn{
+    color: #333;
+    margin-right: 20px;
+}
+.news .comments li .comments_inf .dian{
+    float: right;
+    padding-right: 30px;
+    background: url("../image/zan_g.png") no-repeat right center;
+    background-size: 21px 21px;
+}
+.news .comments li .comments_inf .dian.orange{
+    background: url("../image/zan_o.png") no-repeat right center;
+    background-size: 21px 21px;
+}
+.news .comments li .comments_details{
+    padding-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+.news .comments li .operation{
+    width: 200px;
+    height: 30px;
+    background-color: #666;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    font-size: 0;
+    display: none;
+}
+.news .comments li.active .operation{
+    display: block;
+}
+.news .comments li .operation .reply_btn{
+    display: inline-block;
+    width: 99px;
+    height: 30px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+.news .comments li .operation .report_btn{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+ .comments li .reply .operation_two{
+    width: 200px;
+    height: 30px;
+    background-color: #666;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 0;
+    display: none;
+}
+ .comments li .reply.active .operation_two{
+    display: block;
+}
+ .comments li .reply .operation_two .reply_btn{
+    display: inline-block;
+    width: 99px;
+    height: 30px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+ .comments li .reply .operation_two .report_btn{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+ .comments li .reply_more .operation_two{
+    width: 200px;
+    height: 30px;
+    background-color: #666;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 0;
+    display: none;
+}
+ .comments li .reply_more.active .operation_two{
+    display: block;
+}
+ .comments li .reply_more .operation_two .reply_btn{
+    display: inline-block;
+    width: 99px;
+    height: 30px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+ .comments li .reply_more .operation_two .report_btn{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+.news .comments li .del_wp{
+    width: 100px;
+    height: 30px;
+    background-color: #666;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    font-size: 0;
+    display: none;
+}
+.news .comments li .del_wp .del_btn{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+.news .comments li .reply_more{
+    display: none;
+    background-color: #d2d2d2;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    position: relative;
+}
+.news .comments li .reply_more .name{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.news .comments li .reply_more .con{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #666;
+}
+.news .comments li .more{
+    text-align: right;
+    font-size: 12px;
+    color: #0195c5;
+    padding: 5px;
+}
+.activity{
+    width: 100%;
+}
+.activity .activity_hd{
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+.activity .activity_hd .pic{
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.activity .activity_hd .pic img{
+    width: 100%;
+    height: 100%;
+}
+.activity .activity_hd .name{
+    height: 25px;
+    color: #333;
+}
+.activity .activity_hd .time{
+    margin-top: 5px;
+    height: 20px;
+    font-size: 14px;
+    color: #999;
+}
+.activity .activity_hd .title{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.activity .activity_information{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.activity .activity_information .pic{
+    width: 100%;
+    font-size: 0;
+}
+.activity .activity_information .pic img{
+    width: 100%;
+}
+.activity .activity_information .con{
+    padding: 10px 15px 0 15px;
+}
+.activity .activity_information .con h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.activity .activity_information .con .infor{
+    padding-left: 15px;
+    font-size: 14px;
+}
+.activity .activity_information .con .outside{
+    width: 120px;
+    height: 10px;
+    background-color: #d2d2d2;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 10px;
+}
+.activity .activity_information .con .inside{
+    width: 60px;
+    height: 10px;
+    background-color: #0195c5;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 10px;
+}
+.activity .activity_information .con .blue{
+    color: #0195c5;
+}
+.activity .activity_rule{
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+}
+.activity .activity_rule h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.activity .activity_rule .rule{
+    padding-left: 15px;
+    font-size: 14px;
+}
+.activity .activity_content{
+    padding: 10px 15px;
+}
+.activity .activity_content h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.activity .activity_content .con{
+    padding-left: 15px;
+    font-size: 14px;
+    text-indent: 2em;
+}
+.activity .activity_content .con_pic_wrap{
+    font-size: 0;
+    padding: 10px 0;
+}
+.activity .activity_content .con_pic_wrap .con_pic{
+    width: 32%;
+    height: 80px;
+    float: left;
+    margin-right: 2%;
+}
+.activity .activity_content .con_pic_wrap .con_pic:last-child{
+    margin-right: 0;
+}
+.activity .activity_content .con_pic_wrap .con_pic img{
+    width: 100%;
+    height: 100%;
+}
+.card{
+    width: 100%;
+}
+.card .card_hd{
+    padding: 15px;
+}
+.card .card_hd .pic{
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.card .card_hd .pic img{
+    width: 100%;
+    height: 100%;
+}
+.card .card_hd .name{
+    height: 25px;
+    color: #333;
+}
+.card .card_hd .add_time{
+    margin-top: 5px;
+    height: 20px;
+    font-size: 14px;
+    color: #999;
+}
+.card .card_con{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.card .card_con .title{
+    font-weight: bold;
+    height: 42px;
+    line-height: 21px;
+    overflow: hidden;
+}
+.card .card_con .detail{
+    padding: 5px 0;
+    text-indent: 2em;
+    font-size: 14px;
+}
+.card .card_con .pic{
+    font-size: 0;
+    width: 100%;
+}
+.card .card_con .pic img{
+    width: 100%;
+}
+.card .card_con .icon{
+    padding: 10px 0;
+}
+.card .comments{
+    padding: 0 15px;
+}
+.card .comments .title{
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+}
+.card .comments li{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.card .comments li a.pic{
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.card .comments li .pic img{
+    width: 100%;
+    height: 100%;
+}
+.card .comments li .comments_inf{
+    height: 30px;
+}
+.card .comments li .time{
+    margin-top: 10px;
+    height: 20px;
+    color: #999;
+    font-size: 14px;
+}
+.card .comments li .reply{
+    background-color: #d2d2d2;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.card .comments li .reply .name{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.card .comments li .reply .con{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #666;
+}
+.card .comments li .reply_more{
+    display: none;
+    background-color: #d2d2d2;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.card .comments li .reply_more .name{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.card .comments li .reply_more .con{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #666;
+}
+.card .comments li .figure{
+    font-size: 0;
+    padding-top: 10px;
+    width: 100%;
+}
+.card .comments li .figure img{
+    width: 100%;
+}
+.card .comments li .more{
+    text-align: right;
+    font-size: 12px;
+    color: #0195c5;
+    padding: 5px;
+}
+.card .comments li .comments_inf .nn,.card .comments li .comments_inf .fl{
+    color: #333;
+    margin-right: 20px;
+}
+.card .comments li .comments_inf .dian{
+    float: right;
+    padding-right: 30px;
+    background: url("../image/zan_g.png") no-repeat right center;
+    background-size: 21px 21px;
+}
+.card .comments li .comments_inf .dian.orange{
+    background: url("../image/zan_o.png") no-repeat right center;
+    background-size: 21px 21px;
+}
+.card .comments li .comments_details{
+    padding-top: 10px;
+    color: #666;
+}
+.card .comments li .operation{
+    width: 200px;
+    height: 30px;
+    background-color: #666;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    font-size: 0;
+    display: none;
+}
+.card .comments li.active .operation{
+    display: block;
+}
+.card .comments li .operation .reply_btn{
+    display: inline-block;
+    width: 99px;
+    height: 30px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+.card .comments li .operation .report_btn{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
