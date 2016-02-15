@@ -1,0 +1,333 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+img{
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%; 
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.header-area{
+    position: relative;
+    width: 100%;
+}
+.sun-img{
+    float: left;
+    margin-top: 1.5rem;
+    margin-left: 10%;
+    width: 18.5%;
+    animation: sunshine 1.2s linear infinite;
+    animation-direction: alternate;
+    -webkit-animation: sunshine 1.2s linear infinite;
+    -webkit-animation-direction: alternate;   
+}
+.sun-img > img{
+    width: 100%;
+}
+.yun-img-first{ 
+    float: left;  
+    margin-top: 3rem;
+    margin-left: 15%;
+    width: 22%;
+    animation: yunMoveBig 1.8s linear infinite;
+    animation-direction: alternate;
+    -webkit-animation: yunMoveBig 1.8s linear infinite;
+    -webkit-animation-direction: alternate;
+}
+.yun-img-first > img{
+    width: 100%;
+}
+.yun-img-second{
+    float: left;
+    margin-top: 1rem;
+    margin-left: 10%;
+    width: 17%;
+    animation: yunMoveSmall 1.3s linear infinite;
+    animation-direction: alternate;
+    -webkit-animation: yunMoveSmall 1.3s linear infinite;
+    -webkit-animation-direction: alternate;
+}
+.yun-img-second > img{
+    width: 100%;
+}
+.header-title{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header-title > img{
+    width: 100%;
+}
+/*闭合药箱*/
+#closed-box{
+    position: relative;
+    margin-top: 0.5rem;
+    margin-left: 7%;
+    width: 90%;
+}
+.closed-img{
+    width: 100%;
+}
+.closed-img > img{
+    width: 100%;
+}
+.hand-img{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 24%;
+    animation: handmove 0.5s linear infinite;
+    animation-direction: alternate;
+    -webkit-animation: handmove 0.5s linear infinite;
+    -webkit-animation-direction: alternate;    
+}
+.hand-img > img{
+    width: 100%;
+}
+
+/*打开的药箱*/
+#open-box{
+    position: relative;
+    margin-top: 0.5rem;
+    margin-left: 7%;
+    width: 90%;
+    display: none;
+}
+#open-box > img{
+    width: 100%;
+}
+.medicine-box-first{
+	position:absolute;
+	bottom:7.5rem;
+	left:19%;
+	width:20%;
+	height:8rem;
+	transform:skew(0deg,41.5deg);
+	-webkit-transform:skew(0deg,41.5deg); 
+	overflow: hidden;
+}
+.medicine-img-first{
+	position:absolute;
+	top:4rem;
+	width:100%;
+	transform:skew(0deg,-40deg);
+	-webkit-transform:skew(0deg,-40deg);
+}
+.medicine-img-first > img{
+	width:100%;
+}
+.medicine-box-second{
+	position:absolute;
+	bottom:6.5rem;
+	left:43.7%;
+	width:40%;
+	height:12rem;
+	transform:skew(0deg,-9deg);
+	-moz-transform:skew(0deg,-9deg);
+	-webkit-transform:skew(0deg,-9deg);
+	overflow: hidden;
+}
+.medicine-img-second{
+	position:absolute;
+	top:6rem;
+	width:100%;
+	transform:skew(0deg,10deg);
+	-moz-transform:skew(0deg,10deg);
+	-webkit-transform:skew(0deg,10deg);
+}
+.medicine-img-second > img{
+     width: 100%;
+}
+
+#baby-img{
+    position: relative;
+    left: 0;
+    bottom: 12rem;
+    z-index: 999;
+    width: 24%;
+}
+#car-box{
+   position: absolute;
+   bottom: 0;
+   right: 12%;
+   width: 28%; 
+   z-index: 999;
+}
+/*说明页*/
+#explain{
+    position: relative;
+    display: none;
+    overflow: hidden;
+}
+.explain-btn{
+    position: absolute;
+    width: 22%;
+    top: 1rem;
+    left: 5%;
+    animation: btnMove 1.3s linear infinite;
+    animation-direction: alternate;
+    -webkit-animation: btnMove 1.3s linear infinite;
+    -webkit-animation-direction: alternate;
+}
+.explain-btn > img{
+    width: 100%;
+}
+.yun-img-third{
+    position: absolute;
+    width: 22%;
+    top: 9rem;
+    left: -5%;
+    animation: yunMoveBig 1.8s linear infinite;
+    animation-direction: alternate;
+    -webkit-animation: yunMoveBig 1.8s linear infinite;
+    -webkit-animation-direction: alternate;
+}
+.yun-img-fourth{
+    position: absolute;
+    width: 17%;
+    top: 10rem;
+    right: -5%;
+    animation: yunMoveSmall 1.3s linear infinite;
+    animation-direction: alternate;
+    -webkit-animation: yunMoveSmall 1.3s linear infinite;
+    -webkit-animation-direction: alternate;
+}
+/*动画效果*/
+@keyframes sunshine 
+{
+	from {opacity: 0.4;}
+	to {opacity: 1;}
+}
+@-webkit-keyframes sunshine  /*safari and chrome*/
+{
+	from {opacity: 0.4;}
+	to {opacity: 1;}
+}
+@keyframes handmove{
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes handmove /*safari and chrome*/
+{
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+@keyframes yunMoveBig /*safari and chrome*/
+{
+    from {width:22%;}
+    to {width: 17%;}
+}
+@-webkit-keyframes yunMoveBig /*safari and chrome*/
+{
+    from {width:22%;}
+    to {width: 17%;}
+}
+@keyframes yunMoveSmall /*safari and chrome*/
+{
+    from {width:17%;}
+    to {width: 15%;}
+}
+@-webkit-keyframes yunMoveSmaill /*safari and chrome*/
+{
+    from {width:17%;}
+    to {width: 15%;}
+}
+@keyframes btnMove{
+    frome {width: 22%;}
+    to {width: 19%;}
+}
+@-webkit-keyframes btnMove{
+    frome {width: 22%;}
+    to {width: 19%;}
+}
+
+@media screen and ( max-width:391px ) {
+	.yun-image-first{
+		margin-top:2rem;
+	}
+	#closed-box{
+		margin-top:0;
+	}
+	#open-box{
+		margin-top:0;
+	}
+	.medicine-box-first{
+		bottom:7rem;
+		left:19%;
+	}
+	.medicine-box-second{
+		bottom:6.4rem;
+	}
+	#car-box{
+		bottom:0;
+		width:28%;
+	}
+}
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone4/4s */
+	.yun-image-first{
+		margin-top:2rem;
+	}
+	.header-title{
+		margin:0 auto;
+		width:90%;
+	}
+	#closed-box{
+		margin-top:-0.5rem;
+	}
+	#baby-box{
+		bottom:3rem;
+	}	
+	#car-box{
+		bottom:0;
+		width:24%;
+	}
+	.medicine-box-first{
+		bottom:6.8rem;
+		left:21%;
+	}
+	.medicine-box-second{
+		bottom:6rem;
+	}
+}
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
+	#closed-box{
+		margin-top:0;
+	}
+	#open-box{
+		margin-top:0;
+	}
+	.medicine-box-first{
+		bottom:7rem;
+		left:19%;
+	}
+	.medicine-box-second{
+		bottom:6.2rem;
+	}
+}
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6*/
+	.medicine-box-first{
+		bottom:8rem;
+	}
+	.medicine-box-second{
+		bottom:7rem;
+	}
+}
+
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:3){/* 兼容iphone6plus*/
+	.medicine-box-first{
+		bottom:9rem;
+	}
+    .medicine-box-second{
+		bottom:8rem;
+	}
+}

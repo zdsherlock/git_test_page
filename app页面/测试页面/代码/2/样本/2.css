@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width:100%;
+	background: #FFFAE9;
+	font-family: "黑体";
+}
+header{
+	width:100%;
+	background: #242928;
+	text-align: center;
+	font-size: 15px;color: white;
+	padding:1em 0;
+}
+span{
+	color: red;
+}
+.main{
+	font-size: 12px;
+	margin:1em;
+}
+.main input{
+	width:100%;
+	font-size: 12px;
+	padding: 0.5em 0;
+}
+.searchline{
+	margin-bottom: 2em;
+}
+p{
+	height: 2.3em;
+	line-height: 2.3em;
+}
+#inputdiv{
+	background: white
+}
+#inputdiv  input{
+	width:75%;
+	border:none;
+	outline: none;
+	padding: 0.7em 0;
+}
+#inputdiv span{
+	color: black;
+	margin-left: 0.5em;
+}
+#carddiv{
+	overflow: hidden;
+	background: #FF5750;
+	/* vertical-align: middle; */
+	width: 100%;
+	display: table;  
+}
+#carddiv label{
+	float: left;
+}
+#card{width: 15px;height: 15px;display: inline-block;}
+.rslide{vertical-align: middle;display: table-cell;}
